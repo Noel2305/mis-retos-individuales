@@ -13,15 +13,20 @@ body {
     text-align: center;
 }
 
+#titulo {
+    text-align: center;
+}
+
 .dato-importante {
     color: #1eff00; 
     font-weight: bold; 
 }
 
-main{     
-    max-width: 500px;      
+main{ 
+    max-width: 2000px;         
     margin: auto;
     margin-top: 20px; 
+    
 }
 
 section{    
@@ -29,11 +34,26 @@ section{
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+   
 }
 
 article{    
     background-color: rgb(192, 185, 185);
-    padding: 20px;
-    display: flex;       
-    flex-wrap: wrap;
+    padding: 20px;       
+    border: 1px solid #050505;
+    width: 200px;
+}
+
+article {
+    width: 200px;
+}
+
+@media (max-width: 600px) {
+    article{
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 1.5rem; 
+    }
 }
